@@ -25,11 +25,12 @@ const props = defineProps(['notes']);
 </template>
 
 <style scoped>
-
-
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   scale: 1.012;
   cursor: pointer;
 }
+
+
+
 </style>

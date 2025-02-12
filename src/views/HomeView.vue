@@ -4,11 +4,14 @@ import getNotes from '../../composable/getNotes';
 import FormSearch from '@/components/Form/FormSearch.vue';
 import UIButtonAdd from '@/components/UI/UIButtonAdd.vue';
 import AddNote from '../components/Modal/AddNote.vue';
+import DetailNote from '@/components/Modal/DetailNote.vue';
+
 import { onMounted, ref } from 'vue';
 
-const {notes, error, load} = getNotes();
-const displayNotes = ref([]);
+const {notes, error, load} = getNotes()
+const displayNotes = ref([])
 const isVisible = ref(false)
+const isSelectNote = ref(false)
 // function untuk membuat form terlihat
 const showForm = () => {
   isVisible.value = true
@@ -17,7 +20,7 @@ const showForm = () => {
 
 
 const addNewNote = async (newNote) =>{
-  console.log("New note before sending:", newNote); // Cek apakah content sudah ada
+  // console.log("New note before sending:", newNote); // Cek apakah content sudah ada
   
   await fetch('http://localhost:3000/notes', {
     method: 'POST',
@@ -29,11 +32,21 @@ const addNewNote = async (newNote) =>{
   hideForm()
 }
 
+
+const updateNote = () =>{
+
+}
+
 // function untuk membuat form hidden
 const hideForm = () => {
   isVisible.value = false
   document.body.style.overflow = 'auto';
 
+}
+
+const hideNote = () =>{
+  isSelectNote.value = false
+  document.body.style.overflow = 'auto';
 }
 
 // Fungsi untuk memperbarui displayNotes berdasarkan hasil pencarian
@@ -60,7 +73,7 @@ onMounted(async () => {
       <Card :notes="displayNotes.length ? displayNotes : notes" />
     </div>
   </div>
-
+  <DetailNote v-if="isSelectNote" @close="hideForm" @update="updateNote"/>  
   <AddNote v-if="isVisible" @close="hideForm" @save="addNewNote"/>
 </template>
 

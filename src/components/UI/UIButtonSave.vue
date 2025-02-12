@@ -13,8 +13,6 @@ const saveNote = () =>{
 
 
 <template>
-
-
 <button type="button" class="btn btn-outline-success" @click="saveNote">
   Save Note
 </button>
