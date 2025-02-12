@@ -1,0 +1,397 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "title": "Learning Vue Js",
+      "color": "#FFCC00",
+      "created_at": "2025-01-31T12:00:00Z",
+      "updated_at": "2025-01-31T14:30:00Z",
+      "content": "Deep dive into Vue.js and its ecosystem.",
+      "tasks": [
+        {
+          "id": 1,
+          "task": "Read documentation",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "task": "Build a small project",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "task": "Practice Vue directives",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Plan Weekend Trip",
+      "color": "#66CCFF",
+      "created_at": "2025-01-30T10:15:00Z",
+      "updated_at": "2025-01-30T12:45:00Z",
+      "content": "Prepare for a weekend trip with friends.",
+      "tasks": [
+        {
+          "id": 1,
+          "task": "Book hotel",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "task": "Pack bags",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "task": "Check weather",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Workout Routine",
+      "color": "#FF6666",
+      "created_at": "2025-01-29T08:00:00Z",
+      "updated_at": "2025-01-29T09:30:00Z",
+      "content": "Daily workout plan for better health.",
+      "tasks": [
+        {
+          "id": 1,
+          "task": "Morning joging",
+          "completed": true
+        },
+        {
+          "id": 2,
+          "task": "Strength training",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "task": "Stretching",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Grocery Shopping",
+      "color": "#99CC33",
+      "created_at": "2025-01-28T15:30:00Z",
+      "updated_at": "2025-01-28T17:00:00Z",
+      "content": "Buy weekly groceries for the house.",
+      "tasks": [
+        {
+          "id": 1,
+          "task": "Buy vegetables",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "task": "Get milk and eggs",
+          "completed": true
+        },
+        {
+          "id": 3,
+          "task": "Pick up snacks",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Reading List",
+      "color": "#CC99FF",
+      "created_at": "2025-01-27T19:45:00Z",
+      "updated_at": "2025-01-27T21:00:00Z",
+      "content": "Books to read this month.",
+      "tasks": [
+        {
+          "id": 1,
+          "task": "Finish 'Atomic Habits'",
+          "completed": true
+        },
+        {
+          "id": 2,
+          "task": "Start 'Deep Work'",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "task": "Read a fiction novel",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Learn Spanish",
+      "color": "#FF9900",
+      "created_at": "2025-01-26T16:00:00Z",
+      "updated_at": "2025-01-26T18:30:00Z",
+      "content": "Practice Spanish vocabulary and grammar.",
+      "tasks": [
+        {
+          "id": 1,
+          "task": "Review vocabulary",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "task": "Practice conversation",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "task": "Watch Spanish movies",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Plan Home Renovation",
+      "color": "#33CC33",
+      "created_at": "2025-01-25T11:00:00Z",
+      "updated_at": "2025-01-25T13:15:00Z",
+      "content": "Research and plan for kitchen renovation.",
+      "tasks": [
+        {
+          "id": 1,
+          "task": "Find contractors",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "task": "Choose materials",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "task": "Set budget",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Book Travel to Bali",
+      "color": "#0099FF",
+      "created_at": "2025-01-24T14:30:00Z",
+      "updated_at": "2025-01-24T16:00:00Z",
+      "content": "Plan a trip to Bali for the summer.",
+      "tasks": [
+        {
+          "id": 1,
+          "task": "Research destinations",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "task": "Book flights",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "task": "Find accommodation",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Finish Reading 'The Lord of the Rings'",
+      "color": "#9933FF",
+      "created_at": "2025-01-23T20:00:00Z",
+      "updated_at": "2025-01-23T22:30:00Z",
+      "content": "Read the remaining books in the trilogy.",
+      "tasks": [
+        {
+          "id": 1,
+          "task": "Read 'The Two Towers'",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "task": "Read 'The Return of the King'",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "task": "Write a review",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Apply for New Job",
+      "color": "#FF6600",
+      "created_at": "2025-01-22T09:00:00Z",
+      "updated_at": "2025-01-22T10:30:00Z",
+      "content": "Update resume and cover letter, apply for open positions.",
+      "tasks": [
+        {
+          "id": 1,
+          "task": "Update resume",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "task": "Write cover letter",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "task": "Apply for jobs",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Learn to Play Guitar",
+      "color": "#00CC66",
+      "created_at": "2025-01-21T15:00:00Z",
+      "updated_at": "2025-01-21T17:15:00Z",
+      "content": "Practice basic chords and strumming techniques.",
+      "tasks": [
+        {
+          "id": 1,
+          "task": "Practice chords",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "task": "Learn a simple song",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "task": "Find a guitar teacher",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "title": "Makan",
+      "color": "#4e873c",
+      "created_at": "2025-02-11T16:00:43.479Z",
+      "updated_at": "2025-02-11T16:01:24.997Z",
+      "content": "Beli Martabak dan memakannya sendiri",
+      "tasks": [
+        {
+          "task": "Makan",
+          "completed": false
+        },
+        {
+          "task": "Beli kecap",
+          "completed": false
+        },
+        {
+          "task": "Beli cumi-cumi",
+          "completed": false
+        }
+      ],
+      "id": 15
+    },
+    {
+      "title": "Belajar Baca Puisi",
+      "color": "#dfbb87",
+      "created_at": "2025-02-11T16:30:29.529Z",
+      "updated_at": "2025-02-11T16:31:14.203Z",
+      "content": "baca puisi merupakan jalanku menuju kreativitas",
+      "tasks": [
+        {
+          "task": "Makan",
+          "completed": false
+        },
+        {
+          "task": "Pemanasan",
+          "completed": false
+        },
+        {
+          "task": "Baca Puisi",
+          "completed": false
+        }
+      ],
+      "id": 17
+    },
+    {
+      "title": "Membuat Ringkasan Bacaan",
+      "color": "#f9a70b",
+      "created_at": "2025-02-12T01:54:56.914Z",
+      "updated_at": "2025-02-12T01:56:27.726Z",
+      "content": "Saya Sangat gemar membuat ringkasan bacaa",
+      "tasks": [
+        {
+          "task": "Makan Bakmie",
+          "completed": false
+        },
+        {
+          "task": "Refill Minuman",
+          "completed": false
+        },
+        {
+          "task": "Beli Pulpen",
+          "completed": false
+        },
+        {
+          "task": "Baca Dongeng",
+          "completed": false
+        }
+      ],
+      "id": 18
+    },
+    {
+      "title": "Belajar Cloud Computing",
+      "color": "#a027c8",
+      "created_at": "2025-02-12T02:01:46.724Z",
+      "updated_at": "2025-02-12T02:02:52.402Z",
+      "content": "Saya mau belajar teknologi cloud computing untuk menjawab rasa penasaran saya",
+      "tasks": [
+        {
+          "task": "Beli Wifi",
+          "completed": false
+        },
+        {
+          "task": "Beli Buku ",
+          "completed": false
+        },
+        {
+          "task": "Beli Laptop",
+          "completed": false
+        }
+      ],
+      "id": 19
+    },
+    {
+      "title": "Belajar Masak",
+      "color": "#eba9df",
+      "created_at": "2025-02-12T02:10:47.904Z",
+      "updated_at": "2025-02-12T02:11:42.949Z",
+      "content": "Saya mau memasak nasi goreng yang sangat enak",
+      "tasks": [
+        {
+          "task": "Siapkan Peralatan",
+          "completed": false
+        },
+        {
+          "task": "Beli Minyak",
+          "completed": false
+        },
+        {
+          "task": "Beli Kecap",
+          "completed": false
+        },
+        {
+          "task": "Beli Telur",
+          "completed": false
+        }
+      ],
+      "id": 21
+    }
+  ]
+}
