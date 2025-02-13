@@ -12,16 +12,22 @@ const {notes, error, load} = getNotes()
 const displayNotes = ref([])
 const isVisible = ref(false)
 const isSelectNote = ref(false)
+const selectedNote = ref(null)
+
 // function untuk membuat form terlihat
 const showForm = () => {
   isVisible.value = true
   document.body.style.overflow = 'hidden';
 }
 
+const showNote = (note) =>{
+  selectedNote.value = note
+  isSelectNote.value = true
+  document.body.style.overflow = 'hidden';
+}
 
 const addNewNote = async (newNote) =>{
   // console.log("New note before sending:", newNote); // Cek apakah content sudah ada
-  
   await fetch('http://localhost:3000/notes', {
     method: 'POST',
     headers: {'Content-type':'application/json'},
@@ -32,9 +38,30 @@ const addNewNote = async (newNote) =>{
   hideForm()
 }
 
+const updateNote = async (updatedNote) => {
+  await fetch('http://localhost:3000/notes/' + updatedNote.id, {
+    method: 'PUT', // megubah POST ke  PUT karena kita ingin mengupdate seluruh data
+    headers: { 'Content-type': 'application/json' },
+    body: JSON.stringify(updatedNote),
+  });
 
-const updateNote = () =>{
+  await load();
+  displayNotes.value = notes.value;
+  hideNote();
+};
 
+
+const deleteNote = async (id) =>{
+  try{
+    await fetch('http://localhost:3000/notes/'+id, {
+      method: 'DELETE'
+    })
+  // Memperbarui tampilan setelah menghapus
+  await load();
+  displayNotes.value = notes.value
+  }catch(error){
+    console.error("Error deleting note:", error)
+  }
 }
 
 // function untuk membuat form hidden
@@ -70,13 +97,16 @@ onMounted(async () => {
       <FormSearch :notes="notes" @filteredNotes="updateFilteredNotes"/>
     </header>
     <div class="content">
-      <Card :notes="displayNotes.length ? displayNotes : notes" />
+      <!-- Mengirim event ke showNote saat card diklik -->
+      <Card :notes="displayNotes.length ? displayNotes : notes" @viewNote="showNote" @deleteNote="deleteNote"/>
     </div>
   </div>
-  <DetailNote v-if="isSelectNote" @close="hideForm" @update="updateNote"/>  
+  <!--Mengirim selectedNote ke DetailNote -->
+  <DetailNote v-if="isSelectNote" :note="selectedNote" @close="hideNote" @update="updateNote"/>  
+
   <AddNote v-if="isVisible" @close="hideForm" @save="addNewNote"/>
 </template>
 
 <style scoped>
-  /* Tambahkan gaya sesuai kebutuhan */
+
 </style>

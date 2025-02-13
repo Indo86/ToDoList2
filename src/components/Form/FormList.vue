@@ -21,7 +21,7 @@ function addTaskLocal(){
 
 <div class="mb-3">
   <label for="todoInput" class="form-label">What To Do</label>
-  <input type="text" class="form-control" id="todoInput" placeholder="Do Something!" @keyup.enter="addTaskLocal" v-model="tasks">
+  <input type="text" class="form-control" id="todoInput" placeholder="Do Something!" @keyup.enter="addTaskLocal" v-model="tasks" >
 </div>
 
 </template>

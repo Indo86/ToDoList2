@@ -1,7 +1,7 @@
 <script setup>
-import CardForm from '../Card/CardForm.vue';
-defineEmits(['close', 'save'])
-
+import CardSingle from '../Card/CardSingle.vue';
+defineEmits(['close', 'update', 'show'])
+defineProps(['note'])
 
 </script>
 
@@ -11,10 +11,7 @@ defineEmits(['close', 'save'])
 
 <div class="background-blur" @click.self="$emit('close')">
   <div class="container d-flex flex-row align-items-center justify-content-center">
-    <CardForm 
-    @close="$emit('close')"
-    @save="$emit('save',  $event)"
-    />
+    <CardSingle :note="note" @close="$emit('close')" @update="$emit('update', $event)"/>
   </div>
 </div>
 
@@ -25,6 +22,7 @@ defineEmits(['close', 'save'])
 
 
 <style scoped>
+
 .background-blur {
   position: fixed; /* Menutupi seluruh layar */
   top: 0;
